@@ -1,15 +1,71 @@
 {
-  "name": "nuxt-ui-programmatic-modals",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "nuxt-ui-modals",
   "type": "module",
+  "version": "1.0.0",
+  "description": "Programmatic modal API for Nuxt UI v4's <UModal> — a simple, fully-typed useModal() composable for any Vue 3 + Vite app.",
+  "license": "MIT",
+  "keywords": [
+    "nuxt-ui",
+    "modal",
+    "dialog",
+    "vue",
+    "useModal",
+    "programmatic",
+    "composable",
+    "typescript"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "type-check": "vue-tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "playground": "vite --config playground/vite.config.ts",
+    "docs:dev": "pnpm --filter nuxt-ui-modals-docs run docs:dev",
+    "docs:build": "pnpm --filter nuxt-ui-modals-docs run docs:build",
+    "docs:preview": "pnpm --filter nuxt-ui-modals-docs run docs:preview"
+  },
+  "peerDependencies": {
+    "@nuxt/ui": "^4.0.0",
+    "vue": "^3.5.0"
+  },
+  "dependencies": {
+    "vue-component-type-helpers": "^3.3.14"
+  },
   "devDependencies": {
-    "@nuxt/ui": "^4.9.0",
-    "@vueuse/core": "^14.3.0",
-    "@vueuse/shared": "^14.3.0"
+    "@antfu/eslint-config": "^10.0.0",
+    "@microsoft/api-extractor": "^7.60.1",
+    "@nuxt/ui": "^4.12.0",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "@vueuse/core": "^15.0.0",
+    "eslint": "^10.14.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.5",
+    "vite-plugin-dts": "^5.1.2",
+    "vitest": "^5.0.5",
+    "vue": "^3.5.44",
+    "vue-router": "^5.4.0",
+    "vue-tsc": "^3.3.14"
   }
 }
