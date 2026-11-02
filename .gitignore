@@ -21,4 +21,5 @@ Icon
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 dist
-docs/.vitepress
+/docs/.vitepress/cache/
+/docs/.vitepress/dist/

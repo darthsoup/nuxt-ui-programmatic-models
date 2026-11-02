@@ -13,8 +13,8 @@ declare module 'vue' {
   export interface GlobalComponents {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    UApp: typeof import('./../node_modules/.pnpm/@nuxt+ui@4.12.0_2c846bd33cc3e3c00808f1a61b5cefde/node_modules/@nuxt/ui/dist/runtime/components/App.vue')['default']
-    UButton: typeof import('./../node_modules/.pnpm/@nuxt+ui@4.12.0_2c846bd33cc3e3c00808f1a61b5cefde/node_modules/@nuxt/ui/dist/runtime/components/Button.vue')['default']
-    UCard: typeof import('./../node_modules/.pnpm/@nuxt+ui@4.12.0_2c846bd33cc3e3c00808f1a61b5cefde/node_modules/@nuxt/ui/dist/runtime/components/Card.vue')['default']
+    UApp: typeof import('./../node_modules/.pnpm/@nuxt+ui@4.12.0_cf6e2e11c17ecc1b2d8b7dde2f55ff85/node_modules/@nuxt/ui/dist/runtime/components/App.vue')['default']
+    UButton: typeof import('./../node_modules/.pnpm/@nuxt+ui@4.12.0_cf6e2e11c17ecc1b2d8b7dde2f55ff85/node_modules/@nuxt/ui/dist/runtime/components/Button.vue')['default']
+    UCard: typeof import('./../node_modules/.pnpm/@nuxt+ui@4.12.0_cf6e2e11c17ecc1b2d8b7dde2f55ff85/node_modules/@nuxt/ui/dist/runtime/components/Card.vue')['default']
   }
 }

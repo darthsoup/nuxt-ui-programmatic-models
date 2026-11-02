@@ -1,0 +1,11 @@
+/*
+ * @nuxt/ui (Tailwind v4) styles for the live demos.
+ *
+ * Load this stylesheet before the default theme to establish the layer order.
+ * VitePress 2's base styles override Tailwind Preflight, while Nuxt UI components
+ * and utilities retain precedence over both resets.
+ */
+@layer theme, base, __vitepress_base, components, utilities;
+
+@import 'tailwindcss';
+@import '@nuxt/ui';
